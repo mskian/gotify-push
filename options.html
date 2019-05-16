@@ -1,0 +1,55 @@
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Gotify Setup</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+  <style>
+    body {
+    background-color: #fafafa;
+    color: #222;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    height: 275px;
+    min-width: 700px;
+    padding: 8px;
+}
+    .title {
+    color: #3498db;
+    flex-grow: 1;
+    font-size: 5vw;
+    font-weight: 300;
+}
+  </style>
+
+</head>
+<body>
+
+<br>
+<div class="container">
+<h2 class="title text-center">Gotify URL with API</h2>
+<p class="text-center">Example - <code>https://push.example.com/message?token=xxxxxxxxxxxxx</code></p>
+<br>
+<form id="form">
+<div class="form-group">
+<input class="form-control" id="apiurl" type="text" placeholder="API URL">
+</div>
+<button id="save" type="submit" class="btn btn-block btn-primary btn-lg">Save</button>
+</form>
+<br>
+</div>
+
+<div class="col text-center">
+<a href="pop.html" class="btn btn-info">Back</a>
+</div>
+<br>
+
+<script src="js/gotify.js"></script>
+</body>
+</html>

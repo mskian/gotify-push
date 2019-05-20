@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Gotify Push",
     "description": "A Simple Server For Sending and Receiving Messages",
-    "version": "0.1",
+    "version": "0.2",
     "icons": {
       "16": "icon_16.png",
       "48": "icon_48.png",

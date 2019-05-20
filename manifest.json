@@ -17,7 +17,6 @@
       "scripts": [
         "js/gotify.js",
         "js/app.js",
-        "js/page.js",
         "js/background.js"
       ]
     },

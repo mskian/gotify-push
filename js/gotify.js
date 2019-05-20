@@ -1,13 +1,14 @@
 function saveOptions() {
-    const apiurl = document.getElementById('apiurl').value
+    const apiurl = document.querySelector('#apiurl').value;
     chrome.storage.sync.set({
         apiurl
     }, () => {
         restoreOptions();
-        const apiurl = document.getElementById('save');
-        apiurl.textContent = 'Saved.';
+        const save = document.querySelector('#save');
+        save.classList.add("loading");
         setTimeout(() => {
-            apiurl.textContent = 'Save';
+            save.classList.remove("loading")
+            save.textContent = 'Save';
         }, 1000);
     });
 }
@@ -16,22 +17,23 @@ function restoreOptions() {
     chrome.storage.sync.get({
         apiurl: []
     }, result => {
-        if (document.getElementById('apiurl') != null) {
-            document.getElementById('apiurl').value = result.apiurl;
+        var apifield = document.querySelector('#apiurl');
+        if (apifield != null) {
+            apifield.value = result.apiurl;
         }
     });
 }
 
 document.addEventListener('DOMContentLoaded', restoreOptions);
-var el = document.getElementById('save');
-if (el) {
-    el.addEventListener('click', saveOptions);
+var save = document.querySelector('#save');
+if (save) {
+    save.addEventListener('click', saveOptions);
 }
-var gc = document.getElementById('form');
-if (gc) {
-    gc.addEventListener('submit', ev => {
+var form = document.querySelector('#form');
+if (form) {
+    form.addEventListener('submit', ev => {
         ev.preventDefault();
         saveOptions();
-        document.getElementById('apiurl').focus();
+        document.querySelector('#apiurl').focus();
     });
 }

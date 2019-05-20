@@ -6,15 +6,14 @@ chrome.storage.sync.get({
 
 function cleanupFeed(apiurl) {
 
-  var el = document.getElementById('pushpage');
+  var el = document.querySelector('#pushinfo');
   if (el) {
-      el.addEventListener('submit', pushpage);
+      el.addEventListener('click', pushpage);
   }
 
-  function pushpage(event) {
-
-      event.preventDefault();
-
+  function pushpage() {
+    const send = document.querySelector('#pushinfo');
+    send.classList.add("loading");
       chrome.tabs.query({
           currentWindow: true,
           active: true
@@ -25,14 +24,15 @@ function cleanupFeed(apiurl) {
               message: tab.url,
               priority: 5
           };
-          const send = document.getElementById('push');
+          
           send.textContent = 'Pushed SuccessFully';
           setTimeout(() => {
-              send.textContent = 'Refreshing';
-          }, 1000);
+            send.classList.remove("loading");
+            send.textContent = 'Pushed SuccessFully';
+          }, 500);
           setTimeout(() => {
-              window.location.reload();
-          }, 3000);
+            send.textContent = 'Push Page Info';  
+          }, 1000);
 
           fetch(apiurl, {
                   method: 'POST',

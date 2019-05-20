@@ -2,6 +2,10 @@
 
 Chrome Extension for Send Push Notification gotify/server 🔔
 
+🖥 System Font
+💅 Spectre.css Framework
+💯 Light Weight and Optimized
+
 ## Requirments
 
 - Gotify API
@@ -34,8 +38,6 @@ Chrome Extension for Send Push Notification gotify/server 🔔
 ![Gotify push](https://raw.githubusercontent.com/mskian/gotify-push/master/screenshot/Screenshot3.png)  
 
 ![Gotify push](https://raw.githubusercontent.com/mskian/gotify-push/master/screenshot/Screenshot4.png)  
-
-![Gotify push](https://raw.githubusercontent.com/mskian/gotify-push/master/screenshot/Screenshot5.png)  
 
 ### LICENSE
 

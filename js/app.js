@@ -43,7 +43,7 @@ function cleanupFeed(apiurl) {
                 send.textContent = "Pushed!"
             }, 500),
             setTimeout(() => {
-                send.textContent = "Send"
+                send.textContent = "Send Push"
             }, 700)
         )
         .then(response => console.log('Success:', JSON.stringify(response)))

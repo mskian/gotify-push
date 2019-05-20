@@ -1,0 +1,55 @@
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+body {
+    font-family: system-ui;
+    background-color: #fdfdfd;
+    padding: 20px;
+    width: 350px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #3498db;
+}
+
+.btn-gotify {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.form-input {
+    border-radius: 5px;
+}
+
+.form-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.1rem rgba(60, 137, 199, 0.2);
+}
+
+.btn.btn-gotify {
+    background-color: #3498db;
+    border-color:#3193d4;
+    color: #ffffff;
+}
+
+.btn.btn-gotify:focus,.btn.btn-gotify:hover{
+    background:#3498db;;
+    border-color:#3193d4;
+    color:#ffffff;
+}
+.btn.btn-gotify.active,.btn.btn-gotify:active{
+    background:#3a38d2;
+    border-color:#302ecd;
+    color:#ffffff;
+}
+.btn.btn-gotify.loading::after{
+    border-bottom-color:#ffffff;
+    border-left-color:#ffffff;
+}

@@ -20,7 +20,8 @@ Chrome Extension for Send Push Notification gotify/server 🔔
 ## Usage
 
 - you can Find the Plugin Option page on Chrome toolbar Right side of the Address bar
-- Click Gotify Setup Button and Enter your Gotify APP API URL and Save it
+- Click Gotify Setup Button and Enter your Gotify APP API URL and Save it 
+- Need help in Setting up API? (Follow here: https://gist.github.com/the-mcnaveen/2788985648490e7b3af24647247ed4e7#gistcomment-2996497)
 - That's all Successfully Setup Gotify Push Extension on Chrome Brower
 
 ## Features

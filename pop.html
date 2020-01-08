@@ -1,28 +1,40 @@
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Gotify Send Push</title>
-  <link href="css/spectre.min.css" rel="stylesheet" />
-  <link href="css/custom.css" rel="stylesheet" />
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Gotify Send Push</title>
+
+<link href="css/spectre.min.css" rel="stylesheet" />
+<link href="css/custom.css" rel="stylesheet" />
+
 </head>
 <body>
-  <div class="container text-center">
-    <a href="options.html" class="btn btn-gotify">Gotify Setup</a>
-    <h2>Send Custom Push Notification</h2>
-    <form id="postData">
-      <div class="form-group">
-        <input class="form-input" type="text" name="title" id="title" autocomplete="off" placeholder="Your Title" required>
-      </div>
-      <div class="form-group">
-      <textarea class="form-input" type="text" rows="4" name="message" id="message" autocomplete="off" placeholder="Your Message"
-          required></textarea>
-      </div>
-      <button id="push" type="submit" class="btn btn-gotify">Send Push</button>
-    </form>
-    <button id="pushinfo" class="btn btn-gotify btn-lg">Send Page Info</button>
-  </div>
-  <script src="js/app.js"></script>
+
+<div class="container text-center">
+
+<a href="options.html" class="btn btn-gotify">Gotify Setup</a>
+<h2>Send Custom Push Notification</h2>
+
+<form id="postData">
+<div class="form-group">
+<input class="form-input" type="text" name="title" id="title" autocomplete="off" placeholder="Your Title">
+</div>
+<div class="form-group">
+<textarea class="form-input" type="text" rows="4" name="message" id="message" autocomplete="off" placeholder="Your Message"></textarea>
+</div>
+<button type="submit" class="btn btn-gotify">Send Push</button>
+</form>
+<br>
+<div id="push"></div>
+<br>
+<button id="pushinfo" type ="submit" class="btn btn-gotify btn-lg">Send Page Info</button>
+
+</div>
+
+<script src="js/app.js"></script>
+
 </body>
 </html>

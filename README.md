@@ -1,6 +1,8 @@
 # Gotify push
 
-Chrome Extension for Send Push Notification gotify/server 🔔
+> Gotify Google Chrome Extension
+
+Chrome Extension for Send Push Notification to gotify/server 🔔
 
 🖥 System Font  
 💅 Spectre.css Framework  

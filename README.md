@@ -8,7 +8,7 @@ Chrome Extension for Send Push Notification to gotify/server 🔔
 
 🖥 System Font  
 💅 Spectre.css Framework  
-💯 Light Weight and Optimized
+💯 Light Weight and Optimized  
 ⏳ Fetch API  
 
 ## Requirments

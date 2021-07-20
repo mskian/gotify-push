@@ -70,6 +70,10 @@ h2 {
     border-radius: 5px;
 }
 
+textarea.form-input {
+	resize: vertical;
+}
+
 .form-input:focus {
     border-color: #3498db;
     box-shadow: 0 0 0 0.1rem rgba(60, 137, 199, 0.2);

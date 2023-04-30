@@ -10,10 +10,17 @@ Chrome Extension for Send Push Notification to gotify/server 🔔
 💅 Spectre.css Framework  
 💯 Light Weight and Optimized  
 ⏳ Fetch API  
+🦺 Supports on all Chromium Based web browsers
 
 ## Requirments
 
 - Gotify API
+- Latest Chromium Version for manifest v3 Support
+- Allow CORS Headers to Access and Call Gotify API
+
+## Service Worker
+
+Chrome manifest v3 using Service Worker here we use it to create Chrome contextMenus to sending image,link and selected text to Gotify Server.
 
 ## Installation
 

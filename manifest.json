@@ -1,5 +1,5 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "Gotify Push",
 	"description": "A Simple Chrome Extension For Sending and Receiving Messages from Gotify Push Notification Server.",
 	"version": "0.2",
@@ -9,24 +9,29 @@
 		"128": "icon_128.png"
 	},
 	"options_page": "options.html",
-	"browser_action": {
+	"action": {
 		"default_icon": "icon_16.png",
 		"default_popup": "pop.html"
 	},
-	"background": {
-		"scripts": [
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": [
 			"js/gotify.js",
 			"js/app.js",
 			"js/background.js"
 		]
+	}],
+	"background": {
+		"service_worker": "service-worker.js"
 	},
 	"permissions": [
 		"storage",
 		"tabs",
 		"activeTab",
-		"contextMenus",
-		"http://*/*",
-		"https://*/*"
+		"contextMenus"
+	],
+	"host_permissions": [
+		"*://*/*"
 	],
 	"short_name": "Gotify Push",
 	"homepage_url": "https://gotify.net"

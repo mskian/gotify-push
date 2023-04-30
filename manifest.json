@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Gotify Push",
 	"description": "A Simple Chrome Extension For Sending and Receiving Messages from Gotify Push Notification Server.",
-	"version": "0.2",
+	"version": "0.3",
 	"icons": {
 		"16": "icon_16.png",
 		"48": "icon_48.png",

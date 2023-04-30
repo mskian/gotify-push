@@ -1,3 +1,13 @@
+function alert(msg) {
+  chrome.notifications.create({
+    type: 'basic',
+    title: 'Gotify Push',
+    message: msg,
+    priority: 5,
+    iconUrl: '/icon_16.png'
+  });
+}
+
 if (chrome.contextMenus) {
   chrome.contextMenus.removeAll();
 
@@ -25,6 +35,7 @@ if (chrome.contextMenus) {
         if (image.menuItemId === "CONTEXT_MENU_ID_IMG") {
           if (apiurl == 0) {
             console.log("API URL MISSING");
+            alert("API URL MISSING");
           } else {
             fetch(apiurl, {
               method: "POST",
@@ -39,11 +50,13 @@ if (chrome.contextMenus) {
                   console.log("Done");
                 } else {
                   console.log("Failed to Send Push");
+                  alert("Failed to Send Push");
                 }
               })
               .catch((error) => {
                 console.log(error);
                 console.log("API Error or Connection Lost");
+                alert("API Error or Connection Lost");
               });
           }
         }
@@ -75,6 +88,7 @@ if (chrome.contextMenus) {
         if (link.menuItemId === "CONTEXT_MENU_ID_LINK") {
           if (apiurl == 0) {
             console.log("API URL MISSING");
+            alert("API URL MISSING");
           } else {
             fetch(apiurl, {
               method: "POST",
@@ -89,11 +103,13 @@ if (chrome.contextMenus) {
                   console.log("Done");
                 } else {
                   console.log("Failed to Send Push");
+                  alert("Failed to Send Push");
                 }
               })
               .catch((error) => {
                 console.log(error);
                 console.log("API Error or Connection Lost");
+                alert("API Error or Connection Lost");
               });
           }
         }
@@ -126,6 +142,7 @@ if (chrome.contextMenus) {
         if (text.menuItemId === "CONTEXT_MENU_ID_TEXT") {
           if (apiurl == 0) {
             console.log("API URL MISSING");
+            alert("API URL MISSING");
           } else {
             fetch(apiurl, {
               method: "POST",
@@ -140,11 +157,13 @@ if (chrome.contextMenus) {
                   console.log("Done");
                 } else {
                   console.log("Failed to Send Push");
+                  alert("Failed to Send Push");
                 }
               })
               .catch((error) => {
                 console.log(error);
                 console.log("API Error or Connection Lost");
+                alert("API Error or Connection Lost");
               });
           }
         }

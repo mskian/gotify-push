@@ -28,7 +28,8 @@
 		"storage",
 		"tabs",
 		"activeTab",
-		"contextMenus"
+		"contextMenus",
+		"notifications"
 	],
 	"host_permissions": [
 		"*://*/*"

@@ -51,9 +51,9 @@ function saveOptions() {
   if (el) {
     el.addEventListener("click", saveOptions);
   }
-  var gc = document.getElementById("form");
+  var gc = document.getElementById("saveapi");
   if (gc) {
-    gc.addEventListener("submit", (ev) => {
+    gc.addEventListener("click", (ev) => {
       ev.preventDefault();
       saveOptions();
       document.getElementById("apiurl").focus();
